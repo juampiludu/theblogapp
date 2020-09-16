@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '74v@3s_c_d+7q_qit!7o)p!ahhwgb-2qm#s)dd&$ks_7l9der%'
+SECRET_KEY = os.environ['blogapp_secret_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['theblogapp.pythonanywhere.com']
 
 
 # Application definition
